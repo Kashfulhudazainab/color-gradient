@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppin:wght@400;500;600&disply=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: purple;
+}
+.wrapper{
+    background-color: aliceblue;
+    width:450px;
+    border-radius: 7px;
+padding:25px;
+}
+
+.wrapper .gradient-box{
+    width:100%;
+    height:220px;
+    border-radius: 7px;
+    background:linear-gradient(to left top,#977DFE,#6878FF);
+}
+
+.wrapper .row{
+display:flex;
+margin:20px 0px;
+justify-content: space-between;
+}
+
+.row :where(.column,button){
+    width:calc(100%/2-12px);
+}
+
+.options p{
+    font-size: 1.12rem;
+    margin-bottom:8px;
+}
+
+.options .select-box{
+    border:1px solid #aaa;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.select-box select{
+width:100%;
+border:none;
+outline: none;
+font-size: 1.12rem;
+background: none;
+}
+
+.options .colors{
+    margin-left: 60px;
+}
+
+.colors input{
+height:41px;
+width:calc(100%/2-20px);
+}
+
+.colors input:last-child{
+    margin-left: 6px;
+}
+
+.wrapper textarea{
+width:100%;
+color:#333;
+border-radius: 5px;
+padding:10px 15px;
+border:1px solid #ccc;
+resize:none;
+font-size:1.05rem;
+}
+
+.buttons button{
+    padding:15px 15px;
+    font-size: 1.09rem;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    cursor:pointer;
+    color:#fff;
+    margin:0 0 -15px;
+}
+
+.buttons .refresh{
+    background: gray;
+}
+
+.buttons .copy{
+    background: rgb(103, 4, 103);
+}
+
+@media (max-width: 760px) {
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .options .colors {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .wrapper {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .options p {
+        font-size: 1rem;
+    }
+
+    .buttons button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .options .colors {
+        margin-left: 10px;
+    }
+
+    .colors input {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .wrapper textarea {
+        font-size: 0.95rem;
+    }
+
+    .buttons button {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+}
